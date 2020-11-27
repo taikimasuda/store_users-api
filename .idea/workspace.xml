@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1f0cb2-a06e-4a79-acac-479f7f84017a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/application.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/url_mapping.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/ping/ping_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/users/users_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/users_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/errors/rest_error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasources/mysql/users_db/users_db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/date_utils/date_utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +65,12 @@
     <configuration name="go build github.com/taikimasuda/store_users-api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="store_users-api" />
       <working_directory value="$PROJECT_DIR$" />
+      <envs>
+        <env name="mysql_users_username" value="root" />
+        <env name="mysql_users_password" value="T@iki1104723" />
+        <env name="mysql_users_host" value="127.0.0.1:3306" />
+        <env name="mysql_users_schema" value="users_db" />
+      </envs>
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="github.com/taikimasuda/store_users-api" />
@@ -96,12 +97,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606022813125">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="0" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606464744078">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state x="0" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.814@0.23.1440.814" timestamp="1606460579924" />
+    <state x="0" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.821@0.23.1440.821" timestamp="1606464744078" />
     <state x="0" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.823@0.23.1440.823" timestamp="1606022813125" />
+    <state x="390" y="161" key="EnvironmentVariablesDialog" timestamp="1606464736639">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="390" y="161" key="EnvironmentVariablesDialog/0.23.1440.821@0.23.1440.821" timestamp="1606464736639" />
     <state width="676" height="209" key="GridCell.Tab.0.bottom" timestamp="1606124181629">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
