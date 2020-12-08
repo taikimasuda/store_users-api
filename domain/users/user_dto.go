@@ -10,13 +10,17 @@ const (
 )
 
 type User struct {
-	Id 			int64 	`json:"id"`
+	Id 		int64 	`json:"id"`
 	FirstName 	string 	`json:"first_name"`
 	LastName 	string 	`json:"last_name"`
 	Email 		string 	`json:"email"`
+<<<<<<< HEAD
 	DateCreated string 	`json:"date_created"`
 	Status		string	`json:"status"`
 	Password	string	`json:"-"`
+=======
+	DateCreated 	string 	`json:"date_created"`
+>>>>>>> 1868d509564b444bd0db5fd9e7c357ec82db9298
 }
 
 type Users []User
